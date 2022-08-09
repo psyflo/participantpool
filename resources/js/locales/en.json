@@ -1,0 +1,334 @@
+{
+    "components": {
+        "dashboard": {
+            "title": "Dashboard",
+            "actions": {
+                "refresh": "Refresh"
+            }
+        },
+        "participants": {
+            "title": "Participants",
+            "column": {
+                "name": "Name",
+                "firstname": "Firstname",
+                "email": "Email",
+                "email_verified": "Verified",
+                "gender": "Gender",
+                "birthdate": "Birthdate",
+                "age": "Age",
+                "location": "Location",
+                "education": "Edu",
+                "education_topic": "EduTopic",
+                "language": "Lang",
+                "survey_languages": "SurveyLangs",
+                "study_interest": "Interest",
+                "last_contact": "LastContact",
+                "mailings": "Mailings",
+                "studies": "Studies",
+                "updated_at": "Updated"
+            },
+            "actions": {
+                "refresh": "Refresh",
+                "create": "Create Participant",
+                "mailing": "Create Mailing"
+            },
+            "gender": {
+                "male": "Male",
+                "female": "Female"
+            },
+            "modal": {
+                "mailing": {
+                    "name": "Name",
+                    "study": "Study",
+                    "random": "Random"
+                }
+            },
+            "table": {
+                "footer": "Showing {count} of total {total} items",
+                "pagination": {
+                    "footer": "Showing {from} to {to} of {count} items of total {total} items"
+                }
+            }
+        },
+        "studies": {
+            "title": "Studies",
+            "actions": {
+                "refresh": "Refresh",
+                "create": "Create Study"
+            },
+            "table": {
+                "footer": "Showing {count} of total {total} items"
+            }
+        },
+        "mailings": {
+            "title": "Mailings",
+            "table": {
+                "footer": "Showing {count} of total {total} items"
+            },
+            "column": {
+                "name": "Name",
+                "study": "Study",
+                "owner": "Owner",
+                "state": "State",
+                "count": "Participants"
+            },
+            "actions": {
+                "refresh": "Refresh"
+            }
+        },
+        "participant": {
+            "title": "Participant",
+            "fields": {
+                "name": "Name",
+                "firstname": "Firstname",
+                "email": "Email",
+                "birthdate": "Birthdate",
+                "mailings": "Mailings",
+                "updated": "Updated",
+                "gender": "Gender",
+                "location": "Location",
+                "education": "Education / Topic",
+                "language": "Language",
+                "survey_languages": "Survey Languages",
+                "study_interest": "Study Interest",
+                "studies": "Studies"
+            },
+            "button": {
+                "cancel": "Cancel",
+                "save": "Save",
+                "delete": "Delete",
+                "sendlink": "Send Link"
+            },
+            "mailings": {
+                "columns": {
+                    "name": "Name",
+                    "study": "Study",
+                    "sent": "Sent"
+                }
+            },
+            "genders": {
+                "male": "Male",
+                "female": "Female",
+                "nonbinary": "Non-binary",
+                "notdisclose": "Prefer not to disclose",
+                "selfdescribe": "Prefer to self-describe"
+            },
+            "education": {
+                "options": {
+                    "uni": "University Degree",
+                    "fh": "College Degree",
+                    "high": "Highschool",
+                    "app": "Apprenticeship",
+                    "basic": "Basic Education",
+                    "none": "None"
+                },
+                "topics": {
+                    "medicine": "Medicine",
+                    "science": "Natural Sciences",
+                    "psychology": "Psychology",
+                    "law": "Law",
+                    "languages": "Languages",
+                    "economics": "Economics",
+                    "other": "Other"
+                }
+            },
+            "language": {
+                "options": {
+                    "german": "German",
+                    "english": "English",
+                    "french": "French",
+                    "italian": "Italian"
+                }
+            },
+            "study_interest": {
+                "options": {
+                    "online": "Online studies",
+                    "lab": "Studies in our lab"
+                }
+            },
+            "modal": {
+                "delete": {
+                    "title": "Confirmation",
+                    "message": "Do you really want to delete this participant?"
+                }
+            }
+        },
+        "mailing": {
+            "title": "Mailing",
+            "study": "Study",
+            "owner": "Owner",
+            "state": "State",
+            "participants": "Participants",
+            "subject": "Subject",
+            "content": "Content",
+            "button": {
+                "cancel": "Cancel",
+                "refresh": "Refresh",
+                "save": "Save",
+                "send": "Send",
+                "stop": "Stop",
+                "delete": "Delete"
+            },
+            "columns": {
+                "name": "Name",
+                "firstname": "Firstname",
+                "email": "Email",
+                "sent": "Sent"
+            },
+            "modal": {
+                "delete": {
+                    "title": "Confirmation",
+                    "message": "Do you really want to delete this mailing?"
+                }
+            }
+        },
+        "search": {
+            "filter": {
+                "title": "Filters",
+                "clear": "Clear",
+                "algo": {
+                    "and": "AND",
+                    "or": "OR"
+                },
+                "compare": {
+                    "equals": "EQUAL",
+                    "contains": "CONTAIN",
+                    "between": "BETWEEN",
+                    "greater": "GREATER",
+                    "lower": "LOWER"
+                },
+                "exclude": {
+                    "yes": "IS NOT",
+                    "no": "IS"
+                }
+            }
+        },
+        "study": {
+            "title": "Study",
+            "fields": {
+                "name": "Name",
+                "starts_at": "Start",
+                "ends_at": "End",
+                "description": "Description",
+                "updated": "Updated",
+                "mailings": "Mailings"
+            },
+            "button": {
+                "cancel": "Cancel",
+                "refresh": "Refresh",
+                "save": "Save",
+                "delete": "Delete"
+            },
+            "mailings": {
+                "columns": {
+                    "name": "Name",
+                    "count": "Count of Participants",
+                    "created_at": "Created"
+                }
+            },
+            "modal": {
+                "delete": {
+                    "title": "Confirmation",
+                    "message": "Do you really want to delete this study?"
+                }
+            }
+        },
+        "users": {
+            "title": "Users",
+            "table": {
+                "footer": "Showing {count} of total {total} items"
+            },
+            "column": {
+                "name": "Name",
+                "email": "Email",
+                "role": "Role"
+            },
+            "actions": {
+                "refresh": "Refresh",
+                "create": "Create User"
+            }
+        },
+        "user": {
+            "title": "User",
+            "fields": {
+                "name": "Name",
+                "email": "Email",
+                "password": "Password",
+                "password_confirmation": "Passwort-Confirmation",
+                "role": "Role"
+            },
+            "button": {
+                "cancel": "Cancel",
+                "save": "Save",
+                "delete": "Delete",
+                "refresh": "Refresh"
+            },
+            "modal": {
+                "delete": {
+                    "title": "Confirmation",
+                    "message": "Do you really want to delete this user?"
+                }
+            },
+            "roles": {
+                "disabled": "Disabled",
+                "manager": "Manager",
+                "admin": "Admin"
+            }
+        },
+        "logs": {
+            "title": "Logs",
+            "column": {
+                "date": "Timestamp",
+                "level": "Level",
+                "message": "Message"
+            },
+            "actions": {
+                "refresh": "Refresh"
+            },
+            "table": {
+                "footer": "Showing {count} of total {total} items"
+            }
+        },
+        "settings": {
+            "title": "Settings",
+            "column": {
+                "key": "Key",
+                "value": "Value",
+                "description": "Description",
+                "default": "Default"
+            },
+            "actions": {
+                "refresh": "Refresh"
+            },
+            "table": {
+                "footer": "Showing {count} of total {total} items"
+            },
+            "modal": {
+                "title": "Change Setting",
+                "value": "Value"
+            }
+        }
+    },
+    "models": {
+        "mailing": {
+            "state": {
+                "created": "Created",
+                "stopped": "Stopped",
+                "running": "Running",
+                "finished": "Finished",
+                "unknown": "Unknown"
+            }
+        },
+        "user": {
+            "role": {
+                "none": "",
+                "disabled": "Disabled",
+                "manager": "Manager",
+                "admin": "Admin"
+            }
+        }
+    },
+    "errors": {
+        "unauthorized": "Unauthorized"
+    }
+}

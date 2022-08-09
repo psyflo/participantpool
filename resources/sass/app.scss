@@ -1,0 +1,20 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap v4 (https://getbootstrap.com/docs/4.6/getting-started/introduction/)
+@import '~bootstrap/scss/bootstrap';
+
+// Boostrap icons (https://icons.getbootstrap.com/)
+@import '~bootstrap-icons/font/bootstrap-icons';
+
+// Fontawesome (https://fontawesome.com/v5.15/icons?d=gallery&p=2&m=free)
+@import "~@fortawesome/fontawesome-free/scss/fontawesome";
+@import "~@fortawesome/fontawesome-free/scss/solid";
+@import "~@fortawesome/fontawesome-free/scss/brands";
+@import "~@fortawesome/fontawesome-free/scss/regular";
+
+// BootstrapVue CSS
+@import 'bootstrap-vue/dist/bootstrap-vue.css';
