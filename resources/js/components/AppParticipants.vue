@@ -8,7 +8,7 @@
                 <app-search v-bind:enabled="true"></app-search>
 
                 <div>
-                    <b-button variant="link" v-on:click="loadData">{{ $t('components.participants.actions.refresh') }}</b-button>
+                    <b-button variant="link" v-on:click="refreshData" v-bind:disabled="dataLoading">{{ $t('components.participants.actions.refresh') }}&nbsp;<span class="spinner-border spinner-border-sm" v-bind:class="{ visible: dataLoading, invisible: dataLoading === false }"></span></b-button>
                     <router-link v-bind:to="{ name: 'participant', params: { id: 0 }}">{{ $t('components.participants.actions.create') }}</router-link>
                     <b-button variant="link" v-b-modal.modalPopover>{{ $t('components.participants.actions.mailing') }}</b-button>
                     
@@ -90,6 +90,7 @@
                     { key: 'updated_at', label: this.$t('components.participants.column.updated_at'), sortable: true, enabled: false },
                 ],
                 data: [],
+                dataLoading: false,
                 pagination: {
                     current: 1,
                     perPage: 20,
@@ -123,9 +124,20 @@
             },
         },
         methods: {
+            refreshData() {
+                if (this.dataLoading === false) {
+                    
+                    this.loadData();
+                }
+            },
             async loadData() {
                 try {
+                    /*
+                     * Start loading data process
+                     */
+                    this.dataLoading = true;
                     this.$app.loading();
+
                     /*
                      * Load initial data
                      */
@@ -165,7 +177,12 @@
 
                     } while (lastChunkSize > 0)
 
-                } finally {}
+                } finally {
+                    /*
+                     * Finish loading data process
+                     */
+                    this.dataLoading = false;
+                }
             },
             initSearch() {
                 /*
