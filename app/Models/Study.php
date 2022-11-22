@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\DB;
 
 class Study extends Model
 {
@@ -86,6 +87,8 @@ class Study extends Model
      */
     public function getMailingsCountAttribute()
     {
-        return $this->mailings->count();
+        $result = DB::selectOne('SELECT COUNT(id) AS "count" FROM mailings WHERE study_id = ?', [$this->id]);
+        
+        return $result->count;
     }
 }
