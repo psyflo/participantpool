@@ -106,3 +106,4 @@ public/css/*
 public/js/*
 !public/js/.gitkeep
 !public/vendor/chartjs/dist
+.DS_Store
