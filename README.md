@@ -71,3 +71,9 @@ npm run dev
 * Log in with default admin user
 	* User: XXXXXX
 	* Password: 12345678
+
+## Funded by
+<div>
+    <a href="https://www.mmi-basel.ch/"><img src="https://www.mmi-basel.ch/images/MMI_Logo_outline_retina.png" width="400px" align="left" title="MMI Basel"></a>
+    <a href="https://www.unibas.ch/"><img src="https://psychologie.unibas.ch/typo3conf/ext/easyweb/Resources/Public/Images/Logo_Unibas_BraPan_DE.svg?1668525050" width="200px" align="center" title="MMI Basel"></a>
+</div>
