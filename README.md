@@ -6,6 +6,7 @@ Visit https://mmi.psychologie.unibas.ch/participantpool/ for a live version.
 
 This software was developed with XX and XX. 
 
+## Screenshots
 
 <p float="left">
     <a href="/readme/screenshot_participant.png?raw=true"><img src="/readme/screenshot_participant.png?raw=true" width="45%" title="Sign-up"></a>
