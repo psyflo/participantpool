@@ -2,17 +2,15 @@
 
 ParticipantPool is a self-hosted web-based tool to invite and manage participants for research studies (e.g., user experience, psychology, market research, customer experience).
 
+Visit https://mmi.psychologie.unibas.ch/participantpool/ for a live version. 
 
 This software was developed with XX and XX. 
 
 
-```
-![Screenshot of the sign-up window](/readme/screenshot_participant.jpg?raw=true "Sign-up")
-```
-
-```
-![Screenshot of the admin interface](/readme/screenshot_participant.jpg?raw=true "Admin interface")
-```
+<p float="left">
+    <a href="/readme/screenshot_participant.png?raw=true"><img src="/readme/screenshot_participant.png?raw=true" width="45%" title="Sign-up"></a>
+    <a href="/readme/screenshot_admin.png?raw=true"><img src="/readme/screenshot_admin.png?raw=true" width="45%" title="Admin interface"></a>
+</p>
 
 ## Steps to setup application with XAMPP
 
