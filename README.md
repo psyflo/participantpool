@@ -41,12 +41,12 @@ DB_DATABASE=participantpool # make sure you create this database
 DB_USERNAME=participantpool # or use root on a local system
 DB_PASSWORD=participantpool # use the password you defined in mysql
 ```
- 11.  Set correct URL in webpack (e.g., `/participantpool/public/`)
+11.  Set correct URL in webpack (e.g., `/participantpool/public/`)
 ```
 nano webpack.admin.mix.js
 nano webpack.mix.js
 ```
- 12. Make sure XAMPP has access to the `storage` folder 
+12. Make sure XAMPP has access to the `storage` folder 
 ```
 chmod -R 777 storage  
 ```
@@ -54,23 +54,23 @@ chmod -R 777 storage
  ```
 /Applications/XAMPP/bin/php-8.1.6 artisan key:generate
  ```
- 13. Set up database (with example)
+14. Set up database (with example)
 ```
 /Applications/XAMPP/bin/php-8.1.6 artisan migrate:fresh --seed
-```
-14. Run vue
-```
-npm run vue
 ```
 15. Compile development version
  ```
 npm run dev
 ```
-16. Run Apache Web Server and the MySQL Database in your XAMPP manager
-17. Navigate to your participantpool instance:
+16. Compile vue development resources
+```
+npm run vue
+```
+17. Run Apache Web Server and the MySQL Database in your XAMPP manager
+18. Navigate to your participantpool instance:
 * `http://localhost/participantpool/public/`
 * Log in with default admin user
-	* User: XXXXXX
+	* User: admin@example.com
 	* Password: 12345678
 
 ## Funded by

@@ -20,7 +20,7 @@ class UsersSeeder extends Seeder
         /*
          * Create superadmin
          */
-        DB::table('users')->insert(['id' => 1, 'name' => 'Webadmin', 'email' => 'webadmin-psychologie@unibas.ch', 'password' => Hash::make('web-admin99')]);
+        DB::table('users')->insert(['id' => 1, 'name' => 'Admin', 'email' => 'admin@example.com', 'password' => Hash::make('12345678')]);
 
         /*
          * Assign superadmin to admin role
