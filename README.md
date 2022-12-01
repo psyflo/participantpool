@@ -4,8 +4,6 @@ ParticipantPool is a self-hosted web-based tool to invite and manage participant
 
 Visit https://mmi.psychologie.unibas.ch/participantpool/ for a live version. 
 
-This software was developed with XX and XX. 
-
 ## Screenshots
 
 <p float="left">
