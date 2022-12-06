@@ -2,7 +2,9 @@
 
 ParticipantPool is a self-hosted web-based tool to invite and manage participants for research studies (e.g., user experience, psychology, market research, customer experience).
 
-Visit https://mmi.psychologie.unibas.ch/participantpool/ for a live version. 
+This software was developed with [Laravel](https://laravel.com/) PHP Framework and [Vue](https://vuejs.org/) JavaScript Framework. 
+
+Visit https://mmi.psychologie.unibas.ch/participantpool/ for a live version.
 
 ## Screenshots
 
